@@ -61,7 +61,9 @@ arduinoSerialPort.on('open', function () {
 
 NombresModels.start = async (nombre, apellido) => {
   try {
-    const enviar = "%22%" + nombre + "  ";
+    let aux = nombre.replaceAll("Ñ","N");
+    const enviar = "%22%" + aux + "  ";
+   
     arduinoSerialPort.write(enviar.toString('utf-8'));
 
   } catch (error) {
@@ -72,8 +74,8 @@ NombresModels.start = async (nombre, apellido) => {
 
 NombresModels.playgame = async (nombre) => {
   try {
-    console.log(nombre.nombre)
-    const enviar = "%33%" + nombre + "  ";
+    let aux = nombre.replaceAll("Ñ","N");
+    const enviar = "%33%" + aux  + "  ";
     arduinoSerialPort.write(enviar.toString('utf-8'));
 
   } catch (error) {
