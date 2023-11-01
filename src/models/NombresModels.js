@@ -74,7 +74,7 @@ NombresModels.start = async (nombre, apellido) => {
 
 NombresModels.playgame = async (nombre) => {
   try {
-    let aux = nombre.replaceAll("Ñ","N");
+    let aux = nombre.nombre.replaceAll("Ñ","N");
     const enviar = "%33%" + aux  + "  ";
     arduinoSerialPort.write(enviar.toString('utf-8'));
 
