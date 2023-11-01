@@ -12,10 +12,15 @@ AppController.getnames = async (req, res) => {
 AppController.getname = async (req, res) => {
 
   const nombre = await nombresmodels.findone(req.params.id)
-  console.log(nombre)
+ // console.log(nombre)
   res.render('nombresend', { nombre });
 };
-
+AppController.startgame = async (req, res) => {
+  const nombre = await nombresmodels.findone(req.params.id)
+  //console.log(nombre)
+  await nombresmodels.playgame(nombre)
+  res.render('nombresend', { nombre });
+};
 
 
 
@@ -40,7 +45,7 @@ AppController.start = async (req, res) => {
     await nombresmodels.start(req.params.names)
     const nombres = await nombresmodels.get()
     const nombre = await nombresmodels.findone(req.params.id)
-    console.log(nombre)
+    //console.log(nombre)
     res.render('nombresend', { nombre });
   } catch (error) {
 

@@ -25,11 +25,11 @@
         "time": "123123"
     },
     {
-        "nombre": "DQWEQWE", 
+        "nombre": "DQWEQWE",
         "cedula": "qweqwe",
         "telefono": "qweqwe",
         "marca_dell": "QWE",
-        "status": "ACTIVE",
+        "status": "DISABLE",
         "id": "653fe253fb3a523ad2eab657"
     },
     {
@@ -45,7 +45,7 @@
         "cedula": "22324",
         "telefono": "rwer",
         "marca_dell": "WERWER",
-        "status": "DISABLE",
+        "status": "ACTIVE",
         "id": "653fd885fb3a522d1733da5d"
     }
 ]

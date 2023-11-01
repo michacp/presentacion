@@ -13,5 +13,6 @@ routes.get("/namesall", AppController.getallnames);
 routes.post("/store-nombre", AppController.savename);
 routes.get("/namesen/:id", AppController.getname);
 routes.post("/timesave/:id", AppController.savetime);
+routes.get("/start/:id", AppController.startgame);
 
 module.exports = routes;

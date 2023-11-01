@@ -69,6 +69,19 @@ NombresModels.start = async (nombre, apellido) => {
   }
 
 }
+
+NombresModels.playgame = async (nombre) => {
+  try {
+    console.log(nombre.nombre)
+    const enviar = "%33%" + nombre + "  ";
+    arduinoSerialPort.write(enviar.toString('utf-8'));
+
+  } catch (error) {
+    console.log(error)
+  }
+
+}
+
 NombresModels.save = async (datos) => {
   try {
     datos.status = 'ACTIVE'
