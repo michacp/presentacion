@@ -1,0 +1,76 @@
+<div class="col-md-12 offset-md-0">
+    <div class="card">
+        <div class="dos card-header ">
+            <div class="form-header text-center">
+                <h1 class="form-title">R<span>egistrar Participante</span></h1>
+                <a class="btn btn-outline-info " href="/">
+                    <h1>
+                        <span>Inicio</span>
+                        <i class="bi bi-house "></i>
+                    </h1>
+                </a>
+                <a class="btn btn-outline-primary " href="/names">
+                    <h1>
+                        <span>Participantes</span>
+                        <i class="bi bi-list-ul "></i>
+                    </h1>
+                </a>
+                <a class="btn btn-outline-secondary " href="/namesall">
+                    <h1>
+                        <span>Historial</span>
+                        <i class="bi bi-clock-history"></i>
+                    </h1>
+                </a>
+            </div>
+        </div>
+        <div class="uno card-body">
+
+
+
+            <div class="col-md-6 offset-md-3">
+
+                <form action="/store-nombre" method="post">
+                    <div class="my-3">
+                        <label for="codigo_principals">
+                            <h2>Nombres</h2>
+                        </label>
+                        <input class="form-control input-lg" name="nombre" type="text" placeholder="Nombres"
+                            onkeyup="this.value=this.value.toUpperCase();" required autofocus>
+                    </div>
+
+                    <div class="my-3">
+                        <label for="identificacion_cliente">
+                            <h2>Identificación</h2>
+                        </label>
+                        <input class="form-control" id="identificacion_cliente" name="cedula" type="text"
+                            placeholder="Identificacion" required>
+                        <div id="mensaje1"></div>
+                        <div id="mensaje3"></div>
+                    </div>
+
+                    <div class="my-3">
+                        <label for="telefono_cliente">
+                            <h2>Teléfono</h2>
+                        </label>
+                        <input class="form-control" id="telefono_cliente" name="telefono" type="text"
+                            placeholder="telefono">
+                    </div>
+                    <div class="my-3">
+                        <label for="direccion_cliente">
+                            <h2>Modelo de teléfono</h2>
+                        </label>
+                        <input class="form-control" id="direccion_cliente" name="marca_dell" type="text"
+                            placeholder="Modelo de telefono" onkeyup="this.value=this.value.toUpperCase();">
+                    </div>
+                    <div class="text-center">
+                        <button id="INGRESAR" class="btn btn-primary">
+                            <h2>Ingresar</h2>
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>

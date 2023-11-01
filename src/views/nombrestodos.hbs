@@ -1,0 +1,110 @@
+<div class="col-md-12 offset-md-0">
+    <div class="card">
+        <div class="dos card-header ">
+
+            <div class="form-header text-center">
+                <h1 class="form-title">Historial de participantes</h1>
+                <a class="btn btn-outline-info " href="/">
+                    <h1>
+                        <span>Inicio</span>
+                        <i class="bi bi-house "></i>
+                    </h1>
+                </a>
+                <a class="btn btn-outline-primary " href="/names">
+                    <h1>
+                        <span>Participantes</span>
+                        <i class="bi bi-list-ul "></i>
+                    </h1>
+                </a>
+                <a class="btn btn-outline-success " href="/createnames">
+                    <h1>
+                        <span>Nuevo</span>
+                        <i class="bi bi-plus-circle-fill "></i>
+                    </h1>
+                </a>
+
+            </div>
+        </div>
+        <div class="uno card-body">
+
+
+            <section class="section">
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <div class="card">
+                            <div class="card-body">
+
+
+                                <!-- Table with stripped rows -->
+                                <table class="table datatable">
+                                    <thead>
+                                        <tr>
+                                            <th class="size1 text-center">
+                                                <h1>Nombre</h1>
+                                            </th>
+                                            <th class="size1 text-center">
+                                                <h1>Cédula</h1>
+                                            </th>
+                                            <th class="text-center">
+                                                <h1>Teléfono</h1>
+                                            </th>
+                                            <th class="size text-center">
+                                                <h1>Modelo</h1>
+                                            </th>
+                                            <th class="size">
+                                                <h1>Tiempo</h1>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {{#each nombres}}
+                                        <tr>
+                                            <td>
+                                                <h2>{{this.nombre}}</h2>
+                                            </td>
+                                            <td>
+                                                <h2>{{this.cedula}}</h2>
+                                            </td>
+                                            <td>
+                                                <h2>{{this.telefono}}</h2>
+                                            </td>
+                                            <td>
+                                                <h2>{{this.marca_dell}}</h2>
+                                            </td>
+                                            <td class="text-center ">
+
+                                            </td>
+
+                                        </tr>
+                                        </tr>
+                                        {{/each }}
+                                    </tbody>
+                                </table>
+                                <!-- End Table with stripped rows -->
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+{{#if alertsus}}
+<script>
+
+    Swal.fire({
+        icon: { icon },
+        title: { mensaje },
+        text: { men }
+    }).then(function () {
+        window.location = '/names';
+    });
+
+</script>
+{{/if}}

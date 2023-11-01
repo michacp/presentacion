@@ -1,0 +1,109 @@
+<div class="col-md-12 offset-md-0">
+    <div class="card">
+        <div class="dos card-header ">
+            <div class="form-header text-center">
+                <h1 class="form-title">P<span>articipante</span></h1>
+                <a class="btn btn-outline-info " href="/">
+                    <h1>
+                        <span>Inicio</span>
+                        <i class="bi bi-house "></i>
+                    </h1>
+                </a>
+                <a class="btn btn-outline-success " href="/createnames">
+                    <h1>
+                        <span>Nuevo</span>
+                        <i class="bi bi-plus-circle-fill "></i>
+                    </h1>
+                </a>
+                <a class="btn btn-outline-secondary " href="/namesall">
+                    <h1>
+                        <span>Historial</span>
+                        <i class="bi bi-clock-history"></i>
+                    </h1>
+                </a>
+                <br><br>
+                <h1>{{nombre.nombre}}</h1>
+            </div>
+        </div>
+        <div class="uno card-body">
+
+
+            <section class="section">
+                <div class="row">
+                    <div class="col-lg-6 offset-md-3">
+
+                        <div class="card">
+                            <div class="card-body">
+
+
+
+                                <div class="my-3">
+                                    <label for="codigo_principals">
+                                        <h2>Nombres: {{nombre.nombre}}</h2>
+                                    </label>
+
+                                </div>
+
+                                <div class="my-3">
+                                    <label for="identificacion_cliente">
+                                        <h2>Identificación: {{nombre.cedula}}</h2>
+                                    </label>
+
+                                </div>
+
+                                <div class="my-3">
+                                    <label for="telefono_cliente">
+                                        <h2>Teléfono: {{nombre.telefono}}</h2>
+                                    </label>
+
+                                </div>
+                                <div class="my-3">
+                                    <label for="direccion_cliente">
+                                        <h2>Modelo de teléfono: {{nombre.marca_dell}}</h2>
+                                    </label>
+
+                                </div>
+                                <form action="/timesave/{{nombre.id}}" method="post">
+                                    <div class="my-3">
+                                        <label for="codigo_principals">
+                                            <h2>Tiempo</h2>
+                                        </label>
+                                        <input class="form-control input-lg" name="tiempo" type="text"
+                                            placeholder="tiempo" required autofocus>
+                                    </div>
+
+                                    <div class="text-center">
+                                        <button id="INGRESAR" class="btn btn-primary">
+                                            <h2>Guardar</h2>
+                                        </button><br><br>
+                                    </div>
+
+                                </form>
+
+
+                                <div class="text-center">
+                                    <a class="btn btn-outline-success "
+                                        href="/startname/{{nombre.nombre}}/{{nombre.id}}">
+                                        <h1>
+                                            <span>Enviar</span>
+                                        </h1>
+                                    </a>
+                                    <a class="btn btn-outline-danger " href="/">
+                                        <h1>
+                                            <span>Cancelar</span>
+                                        </h1>
+                                    </a>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>

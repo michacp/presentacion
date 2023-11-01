@@ -1,0 +1,51 @@
+[
+    {
+        "nombre": "EQWEQW",
+        "cedula": "qweqwe",
+        "telefono": "qweqwe",
+        "marca_dell": "QEWQWE",
+        "status": "DISABLE",
+        "id": "653fe316fb3a523efc18bbbd"
+    },
+    {
+        "nombre": "QEQWE",
+        "cedula": "qweweqwe",
+        "telefono": "qweqwe",
+        "marca_dell": "QWE",
+        "status": "DISABLE",
+        "id": "653fe2e0fb3a523dee16407c"
+    },
+    {
+        "nombre": "WEW22",
+        "cedula": "343434",
+        "telefono": "4321w2e",
+        "marca_dell": "WERWE",
+        "status": "DISABLE",
+        "id": "653fe27efb3a523ad2aea3e7",
+        "time": "123123"
+    },
+    {
+        "nombre": "DQWEQWE", 
+        "cedula": "qweqwe",
+        "telefono": "qweqwe",
+        "marca_dell": "QWE",
+        "status": "ACTIVE",
+        "id": "653fe253fb3a523ad2eab657"
+    },
+    {
+        "nombre": "ASD",
+        "cedula": "QWWQ",
+        "telefono": "TRRTR",
+        "marca_dell": "WERW",
+        "status": "DISABLE",
+        "id": "653fd934fb3a522e2f3ab7fe"
+    },
+    {
+        "nombre": "Q2Q22Q",
+        "cedula": "22324",
+        "telefono": "rwer",
+        "marca_dell": "WERWER",
+        "status": "DISABLE",
+        "id": "653fd885fb3a522d1733da5d"
+    }
+]
